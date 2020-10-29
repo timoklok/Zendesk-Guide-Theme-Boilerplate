@@ -1,0 +1,117 @@
+// Variables
+
+// Colors
+$brand_color: #5801ff !default;
+$brand_text_color: #fff !default; //Color for text with an accent color background
+$text_color: #000 !default;
+$link_color: #5801ff !default;
+$background_color: #fff !default;
+$secondary_color: #FF554E !default;
+
+$visited-link-color: darken($link_color, 20%);
+$hover-button-color: darken($brand_color, 20%);
+$secondary-text-color: lighten($text_color, 20%);
+
+$primary-shade: darken(
+  $background_color,
+  3%
+); //#f8f8f8 for the default background_color
+$secondary-shade: darken(
+  $background_color,
+  5%
+); //#f2f2f2 for the default background_color
+
+$font-size-bigger: 16px;
+$font-size-base: 1.125rem;
+$font-size-navigation: 14px;
+$font-size-small: 1.125rem;
+$font-size-smaller: 1rem;
+
+$border-color: #ddd;
+
+$button-color: $secondary_color;
+
+$input-font-size: 14px;
+$field-text-color: #999;
+$field-text-focus-color: #555;
+
+// Breakpoints variables
+$tablet-width: 768px;
+$desktop-width: 1024px;
+$max-width-container: 1160px;
+
+
+/* National 2 Narrow */
+@font-face {
+  font-family: 'National 2 Narrow';
+  font-weight: 900;
+  src: url(unquote("$assets-national2narrow-black-eot"));
+  src: url(unquote("$assets-national2narrow-black-eot?#iefix"))
+      format('embedded-opentype'),
+    url(unquote("$assets-national2narrow-black-woff2")) format('woff2'),
+    url(unquote("$assets-national2narrow-black-woff")) format('woff'),
+    url(unquote("$assets-national2narrow-black-ttf")) format('truetype');
+}
+
+@font-face {
+  font-family: 'National 2 Narrow';
+  font-weight: 700;
+  src: url(unquote("$assets-national2narrow-bold-eot"));
+  src: url(unquote("$assets-national2narrow-bold-eot?#iefix"))
+      format('embedded-opentype'),
+    url(unquote("$assets-national2narrow-bold-woff2")) format('woff2'),
+    url(unquote("$assets-national2narrow-bold-woff")) format('woff'),
+    url(unquote("$assets-national2narrow-bold-ttf")) format('truetype');
+}
+
+@font-face {
+  font-family: 'National 2 Narrow';
+  font-weight: 400;
+  src: url(unquote("$assets-national2narrow-regular-eot"));
+  src: url(unquote("$assets-national2narrow-regular-eot?#iefix"))
+      format('embedded-opentype'),
+    url(unquote("$assets-national2narrow-regular-woff2")) format('woff2'),
+    url(unquote("$assets-national2narrow-regular-woff")) format('woff'),
+    url(unquote("$assets-national2narrow-regular-ttf")) format('truetype');
+}
+
+/* Calibre */
+@font-face {
+  font-family: 'Calibre';
+  font-weight: 400;
+  src: url(unquote("$assets-calibre-regular-eot"));
+  src: url(unquote("$assets-calibre-regular-eot?#iefix")) format('embedded-opentype'),
+    url(unquote("$assets-calibre-regular-woff2")) format('woff2'),
+    url(unquote("$assets-calibre-regular-woff")) format('woff'),
+    url(unquote("$assets-calibre-regular-ttf")) format('truetype');
+}
+
+@font-face {
+  font-family: 'Calibre';
+  font-weight: 500;
+  src: url(unquote("$assets-calibre-semi-bold.eot"));
+  src: url(unquote("$assets-calibre-semi-bold.eot?#iefix")) format('embedded-opentype'),
+    url(unquote("$assets-calibre-semi-bold.woff2")) format('woff2'),
+    url(unquote("$assets-calibre-semi-bold.woff")) format('woff'),
+    url(unquote("$assets-calibre-semi-bold.ttf")) format('truetype');
+}
+
+/* Greenberry */
+@font-face {
+  font-family: 'Greenberry';
+  src: url(unquote("$assets-greenberry-regular.woff2")) format('woff2'),
+    /* Modern Browsers */ url(unquote("$assets-greenberry-regular.otf"))
+      format('opentype'); /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+// Fonts
+$heading_font: "National 2 Narrow", "Roboto", Helvetica, Arial, sans-serif !default;
+$text_font:  "Calibre", "Georgia", Helvetica, Arial, sans-serif !default;
+$font-weight-light: 400;
+$font-weight-base: 400;
+$font-weight-semibold: 500;
+$font-weight-bold: 700;
+$font-weight-black: 900;

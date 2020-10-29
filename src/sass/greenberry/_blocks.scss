@@ -8,14 +8,14 @@
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     list-style: none;
     padding: 0;
 
     &__item {
       @include tablet {
         width: 33.33%;
-        border-right: 1px solid $border-color;
+        // border-right: 1px solid $border-color;
         border-bottom: none;
         margin-bottom: 30px;
       }
@@ -29,7 +29,7 @@
       max-width: 100%;
       text-align: center;
       transition: color 300ms ease;
-      border-bottom: 1px solid $border-color;
+      // border-bottom: 1px solid $border-color;
 
       &:nth-child(3n) {
         border-right: none;
@@ -72,14 +72,21 @@
     }
 
     &__item-link {
-      color: $text-color;
-      padding: 32px;
+      color: $brand_color;
+      padding: 20px 30px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      justify-content: center;
+      border-radius: inherit;
 
       &:hover,
-      &:focus,
-      &:active {
+      &:active, 
+      &:focus {
+        text-decoration: none;
         text-decoration: none;
       }
+
     }
 
     &__item-title {

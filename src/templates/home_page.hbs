@@ -1,7 +1,29 @@
 <include src="hero-partial.hbs"></include>
 
 <div class="container">
-  <section class="categories">
+
+    <section class="section user-links">
+<!--     <h2 class="visibility-hidden">{{ t 'categories' }}</h2> -->
+    <section class="categories">
+
+      <h2>
+        Welkom Gebruiker, hier staat een tekst om mensen te introduceren in de omgeving. 
+      </h2>
+      <ul class="category-list">
+      
+        <li class="category-list__item">
+          {{#link 'new_request' class='category-list__item-link button'}}Maak een nieuw ticket{{/link}}
+        </li>
+
+        <li class="category-list__item">
+          {{#link "my_activities" class="category-list__item-link button"}}Bekijk al mijn tickets{{/link}}
+        </li>
+      
+         
+      </ul>
+    </section>
+
+  {{!-- <section class="categories">
     <ul class="category-list">
       {{#each categories}}
         {{#if ../has_multiple_categories}}
@@ -31,7 +53,7 @@
       {{/each}}
     </ul>
     {{pagination}}
-  </section>
+  </section> --}}
 </div>
 
 <script src="{{asset 'home_page.js'}}"></script>

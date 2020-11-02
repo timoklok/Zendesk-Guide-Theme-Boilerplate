@@ -58,10 +58,24 @@ Once installed you can run `zat theme preview` from inside the dist folder. You 
 ### Assets, settings, translations
 
 All your assets, settings, translations, manifest and so on, can be put directly into their respective locations inside the dist/ folder, as they are not compiled. The dist/ folder follows the exacts structure of exported themes from Zendesk Guide.
+Assets need to be lowercase. When referring to an asset in css use the folloing structure `unquote("$asset-{FILENAME}-{EXTENSION}")`, so for instance : 
+
+```
+/* Calibre */
+@font-face {
+  font-family: 'Calibre';
+  font-weight: 400;
+  src: url(unquote("$assets-calibre-regular-eot"));
+  src: url(unquote("$assets-calibre-regular-eot?#iefix")) format('embedded-opentype'),
+    url(unquote("$assets-calibre-regular-woff2")) format('woff2'),
+    url(unquote("$assets-calibre-regular-woff")) format('woff'),
+    url(unquote("$assets-calibre-regular-ttf")) format('truetype');
+}
+```
 
 ### Compiling and packaging (zip)
 
-To compile for production and make a zip file run `npm run package`.
+To compile for production and make a zip file run `npm run package`. Upload the resulting zip in the Zendesk Guide management environment.
 
 ## Known issues
 

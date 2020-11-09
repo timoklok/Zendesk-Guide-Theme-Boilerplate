@@ -91,6 +91,7 @@
 .form .suggestion-list {
   font-size: $font-size-small;
   margin-top: 30px;
+  display: none;
 
   label {
     border-bottom: 1px solid $border-color;

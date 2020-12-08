@@ -9,10 +9,10 @@
 
     <ul class="header__nav">
       <li class="header__nav-item">
-        {{link 'help_center'}}
+        {{#link 'help_center'}}Welkom{{/link}}
       </li>
       <li class="header__nav-item">
-        <a href="{{page_path 'new_request'}}">{{t 'submit_a_request'}}</a>
+        <a class="new-request-url" href="{{page_path 'new_request'}}">{{t 'submit_a_request'}}</a>
       </li>
     </ul>
     <div class="header__user-info">
@@ -27,7 +27,7 @@
             </svg>
           </button>
           <div class="dropdown-menu" role="menu" aria-expanded="false">
-            {{link "my_activities" role="menuitem"}}
+            {{#link "my_activities" role="menuitem"}}Mijn aanvragen{{/link}}
             {{my_profile role="menuitem"}}
             {{change_password role="menuitem"}}
             {{link "sign_out" role="menuitem"}}

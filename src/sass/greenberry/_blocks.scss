@@ -19,6 +19,16 @@
       color: rgb(50, 50, 60);
     }
 
+    &__intro {
+      display:flex;
+      justify-content:center;
+      
+      p {
+        max-width:700px;
+        text-align:center;
+      }
+    }
+
     &__item {
       @include tablet {
         width: 50%;

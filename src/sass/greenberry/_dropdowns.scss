@@ -39,7 +39,7 @@
   text-align: left;
   z-index: 1000;
   margin-top: 5px;
-
+  
   [dir="rtl"] & {
     text-align: right;
   }
@@ -70,6 +70,9 @@
     text-align: start;
     line-height: inherit;
     width: 100%;
+    
+    text-transform: none;
+
 
     [dir="rtl"] & {
       padding: 7px 20px 7px 40px;

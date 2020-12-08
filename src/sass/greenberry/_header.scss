@@ -11,6 +11,7 @@ $header-height: 80px;
   align-items: center;
   position: relative;
   width: 100%;
+  text-transform: uppercase;
 
   &__logo {
     display: flex;
@@ -49,6 +50,10 @@ $header-height: 80px;
     }
 
     &-item {
+      
+      font-family:$heading_font;
+      font-weight:700;
+
       @include tablet {
         width: auto;
         margin-right: 30px;
@@ -77,6 +82,11 @@ $header-height: 80px;
   &__user-info {
     display: flex;
     align-items: center;
+
+    .dropdown-toggle {
+      font-family: $heading_font;
+      font-weight:700;
+    }
   }
 
   &__nav-toggle {

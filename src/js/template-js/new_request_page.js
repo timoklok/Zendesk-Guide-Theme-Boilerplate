@@ -3,10 +3,7 @@ var field_data = {
 	
 Licht het probleem kort toe. Is het een technisch probleem? Beantwoord dan ook de volgende vragen:
 
-Op welk apparaat heb je het probleem gevonden?
-  - Heb je een Apple-product? Geef dan aan welke macOS- of iOS-versie je gebruikt.
-  - Of heb je een Android product? Geef dan aan welke Android-versie je gebruikt.
-  - Welke browser gebruik je? En welke versie is dit?
+Meld je een probleem met een website? Ga dan naar https://www.whatsmybrowser.org/ en plak hier de link zodat we weten op welk systeem je de website bekijkt. 
 ...
 
 Hoe heb je het probleem ontdekt?
@@ -27,4 +24,8 @@ jQuery(function ($) {
   for (var k in field_data) {
     $("#request_" + k).val(field_data[k]);
   }
+
+  $("#upload-dropzone span").html(
+    "<a>Klik hier om bestanden toe te voegen</a> of sleep bestanden hier naartoe"
+  );
 });
